@@ -26,19 +26,28 @@ void main() {
 /*
 Explanation:
 
-import 'dart:convert';: This line imports the 'dart:convert' library, which provides utilities for converting between JSON and Dart objects.
+import 'dart:convert';
+: This line imports the 'dart:convert' library, which provides utilities for converting between JSON and Dart objects.
 
-void main() { ... }: This is the main function where the program execution starts.
+void main() { ... }
+: This is the main function where the program execution starts.
 
-String jsonData = '{"name": "John Doe", "age": 30}';: This line defines a sample JSON string representing a person's name and age.
+String jsonData = '{"name": "John Doe", "age": 30}';
+: This line defines a sample JSON string representing a person's name and age.
 
-Map<String, dynamic> jsonMap = json.decode(jsonData);: This line decodes the JSON string into a Dart Map using the json.decode() function.
+Map<String, dynamic> jsonMap = json.decode(jsonData);
+: This line decodes the JSON string into a Dart Map using the json.decode() function.
 
-MyClass myObject = MyClass.fromJson(jsonMap);: This line creates a MyClass object by deserializing the JSON Map using the fromJson() factory constructor of the MyClass class.
+MyClass myObject = MyClass.fromJson(jsonMap);
+: This line creates a MyClass object by deserializing the JSON Map using the fromJson() factory constructor of the MyClass class.
 
-print('Name: ${myObject.name}, Age: ${myObject.age}');: This line prints the name and age of the MyClass object to the console.
+print('Name: ${myObject.name}, Age: ${myObject.age}');
+: This line prints the name and age of the MyClass object to the console.
 
-String serializedJson = json.encode(myObject.toJson());: This line serializes the MyClass object back to JSON using the toJson() method and the json.encode() function.
+String serializedJson = json.encode(myObject.toJson());
+: This line serializes the MyClass object back to JSON using the toJson() method and the json.encode() function.
 
-print('Serialized JSON: $serializedJson');: This line prints the serialized JSON string to the console.
- */
+print('Serialized JSON: $serializedJson');
+: This line prints the serialized JSON string to the console.
+
+*/
